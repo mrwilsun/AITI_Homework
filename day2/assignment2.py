@@ -30,3 +30,19 @@ print(conversation)
 # Printing "zing" from "bazinga" using subscripting and index numbers
 new_word ="bazinga"
 print(new_word[2:-1])
+
+# Incase you're wondering, the TA asked us not to do the second. I   just wanted to try it, so please don't fault the others
+
+#Attempting the second part
+#1 Taking input and displaying it
+name = input("Hello, please enter your name:")
+print("You\'re welcome %s " %name)
+
+#2 and 3
+#Ok so i got stuck and confused especially about what the question meant by string object
+#I think this is it:
+age ="18"
+int_age= int(age)
+
+twice_age = int_age*2
+print(f"The age multiplied by two is {twice_age}")
