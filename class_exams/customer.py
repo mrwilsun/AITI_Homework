@@ -9,13 +9,14 @@ class Customer:
         self.phone_number=phone_number
         self.twitter_handle=twitter_handle
         self.cars_list=[]
+        self.alert_time=""
 
-    def wash_car(car):
+    def wash_car(self):
         now = datetime.datetime.now()
         date=now.strftime("%d-%m-%Y")
         time_in=datetime.now.time()
         time_done=time_in+timedelta(minutes=20)
-        alert_time=time_done+timedelta(hours=1)
+        self.alert_time=time_done+timedelta(hours=1)
         add_car(customer,car)
 
     def add_car(self,car):
@@ -25,4 +26,4 @@ class Customer:
                 self.cars_list.append(car)
         
     def show_time(self):
-        print("the alert time is" self.alert_time)
+        print("the alert time is " + self.alert_time)
